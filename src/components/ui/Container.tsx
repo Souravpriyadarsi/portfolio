@@ -13,7 +13,7 @@ export default function Container({
     <div
       className={`
         mx-auto
-        max-w-1400
+        max-w-350
         px-6
         md:px-8
         lg:px-12

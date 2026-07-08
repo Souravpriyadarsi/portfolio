@@ -1,22 +1,25 @@
 import Container from "../ui/Container";
+import clsx from "clsx";
+import { useScroll } from "../../hooks/useScroll";
 
 export default function Navbar() {
+  const scrolled = useScroll();
   return (
     <header
-      className="
-fixed
-top-0
-left-0
-z-50
-w-full
-backdrop-blur-md
-bg-black/20
-border-b
-border-white/5
-"
+      className={clsx(
+        "fixed left-0 top-0 z-50 w-full transition-all duration-500",
+        scrolled ? "py-4" : "py-8",
+      )}
     >
       <Container>
-        <nav className="flex h-24 items-center justify-between">
+        <nav
+          className={clsx(
+            "mx-auto flex items-center justify-between transition-all duration-500",
+            scrolled
+              ? "rounded-full border border-white/10 bg-black/40 px-8 py-4 shadow-2xl backdrop-blur-xl"
+              : "px-0 py-6",
+          )}
+        >
           <h2 className="text-xl font-bold tracking-wide">SP</h2>
 
           <ul className="hidden md:flex items-center gap-12 text-sm">
