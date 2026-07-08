@@ -3,6 +3,7 @@ import Section from "../ui/Section";
 import SectionHeading from "../ui/SectionHeading";
 import ProjectGallery from "../ui/ProjectGallery";
 import TechBadge from "../ui/TechBadge";
+import Reveal from "../motion/Reveal";
 
 import { projects } from "../../data/projects";
 
@@ -12,9 +13,13 @@ export default function CaseStudy() {
   return (
     <Section id="projects">
       <Container>
-        <SectionHeading eyebrow="Case Study" title={project.title} />
+        <Reveal>
+          <SectionHeading eyebrow="Case Study" title={project.title} />
+        </Reveal>
 
-        <p className="case-study-tagline">{project.tagline}</p>
+        <Reveal delay={0.15}>
+          <p className="case-study-tagline">{project.tagline}</p>
+        </Reveal>
 
         <p className="case-study-description">{project.description}</p>
 
@@ -25,7 +30,9 @@ export default function CaseStudy() {
         </div>
 
         <div className="mt-14">
-          <ProjectGallery images={project.images} title={project.title} />
+          <Reveal delay={0.3}>
+            <ProjectGallery images={project.images} title={project.title} />
+          </Reveal>
         </div>
       </Container>
     </Section>
