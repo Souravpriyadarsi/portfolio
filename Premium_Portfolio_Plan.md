@@ -1,9 +1,11 @@
 # Premium Portfolio Website Plan
 
 ## Goal
+
 Build a premium portfolio inspired by https://www.radnaabazar.com/en while creating an original design and interaction style.
 
 ## Tech Stack
+
 - React
 - Vite
 - TypeScript
@@ -15,6 +17,7 @@ Build a premium portfolio inspired by https://www.radnaabazar.com/en while creat
 - React Icons
 
 ## Project Structure
+
 ```text
 src/
   assets/
@@ -29,6 +32,7 @@ src/
 ## Milestones
 
 ### Phase 1 – Project Setup
+
 - Create Vite app
 - Configure TypeScript
 - Install Tailwind
@@ -36,6 +40,7 @@ src/
 - Organize folders
 
 ### Phase 2 – Layout
+
 - Navbar
 - Hero
 - About
@@ -45,6 +50,7 @@ src/
 - Footer
 
 ### Phase 3 – Animations
+
 - Smooth scrolling (Lenis)
 - GSAP text reveals
 - Scroll-triggered animations
@@ -53,6 +59,7 @@ src/
 - Loading screen
 
 ### Phase 4 – Polish
+
 - Responsive design
 - Accessibility improvements
 - Image optimization
@@ -60,11 +67,13 @@ src/
 - Performance audit
 
 ## Pages
+
 - Home
 - Project Details
 - 404
 
 ## Future Features
+
 - Dark/Light mode
 - Blog
 - CMS integration
@@ -72,6 +81,7 @@ src/
 - Contact form backend
 
 ## Git Workflow
+
 ```bash
 git init
 git add .
@@ -79,6 +89,7 @@ git commit -m "Initial portfolio setup"
 ```
 
 Recommended commits:
+
 1. Project setup
 2. Layout complete
 3. Hero animation
@@ -92,8 +103,10 @@ Recommended commits:
 ## GitHub Deployment
 
 ### Create Repository
+
 1. Create a new GitHub repository.
 2. Push your local project:
+
 ```bash
 git remote add origin https://github.com/<username>/<repo>.git
 git branch -M main
@@ -101,17 +114,21 @@ git push -u origin main
 ```
 
 ### Deploy with GitHub Pages
+
 Install:
+
 ```bash
 npm install -D gh-pages
 ```
 
 Update `vite.config.ts`:
+
 ```ts
-base: "/<repo-name>/"
+base: "/<repo-name>/";
 ```
 
 Add to `package.json`:
+
 ```json
 "scripts": {
   "predeploy": "npm run build",
@@ -120,6 +137,7 @@ Add to `package.json`:
 ```
 
 Deploy:
+
 ```bash
 npm run deploy
 ```
@@ -127,8 +145,27 @@ npm run deploy
 Alternatively, deploy automatically with GitHub Actions or use Vercel/Netlify.
 
 ## Definition of Done
+
 - Responsive on mobile, tablet, desktop
 - Smooth 60 FPS animations
 - Lighthouse score above 90
 - Clean component architecture
 - Hosted on GitHub with live deployment
+
+Background
+#0A0A0A
+
+Surface
+#111111
+
+Primary Text
+#F5F5F5
+
+Secondary Text
+#A3A3A3
+
+Accent
+#3B82F6
+
+Border
+#262626
