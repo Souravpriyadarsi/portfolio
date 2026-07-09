@@ -77,7 +77,7 @@ export default function Hero() {
               <Button>View Work →</Button>
             </a>
             <a
-              href="/public/Sourav_Resume_Developer.pdf"
+              href="/Sourav_Resume_Developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

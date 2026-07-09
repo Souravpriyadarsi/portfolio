@@ -24,7 +24,7 @@ export const contact: ContactData = {
     {
       label: "Resume",
       value: "Download PDF",
-      href: "/public/Sourav_Resume_Developer.pdf",
+      href: "/Sourav_Resume_Developer.pdf",
     },
   ],
 };
