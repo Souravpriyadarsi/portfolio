@@ -15,9 +15,7 @@ export default function TechBadge({
         rounded-full
         border
         border-white/10
-        bg-linear-to-b
-        from-white/5
-        to-white/2
+        bg-white/5
         px-3
         py-1.5
         text-xs

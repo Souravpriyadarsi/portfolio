@@ -52,7 +52,7 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative flex min-h-screen items-center">
+    <section id="home" className="relative flex min-h-screen items-center">
       <div className="absolute left-1/2 top-1/2 -z-10 h-150 w-600 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-[160px]" />
 
       <Container>
@@ -70,9 +70,20 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions mt-12 flex items-center gap-8">
-            <Button>View Work →</Button>
-
-            <span className="scroll-label">Scroll</span>
+            <a
+              href="#projects"
+              className="text-neutral-300 transition-colors duration-300 hover:text-white"
+            >
+              <Button>View Work →</Button>
+            </a>
+            <a
+              href="/public/Sourav_Resume_Developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>View Resume ↗</Button>
+            </a>
+            <span className="scroll-label">Scroll ↓</span>
           </div>
         </div>
       </Container>

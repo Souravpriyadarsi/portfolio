@@ -9,7 +9,7 @@ export default function ProjectGallery({ images, title }: Props) {
   const [selectedImage, setSelectedImage] = useState(0);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Main Image */}
       <div
         className="
@@ -17,25 +17,26 @@ export default function ProjectGallery({ images, title }: Props) {
           rounded-3xl
           border
           border-white/10
-          bg-neutral-900
+          bg-[#0f1117]
+          p-6
         "
       >
         <img
           src={images[selectedImage]}
           alt={title}
           className="
-            aspect-video
             w-full
-            object-cover
+            h-auto
+            object-contain
             transition-transform
             duration-500
-            hover:scale-[1.02]
+            hover:scale-[1.01]
           "
         />
       </div>
 
       {/* Thumbnails */}
-      <div className="flex gap-4 overflow-x-auto">
+      <div className="flex gap-5 overflow-x-auto pb-2">
         {images.map((image, index) => (
           <button
             key={index}
@@ -46,7 +47,6 @@ export default function ProjectGallery({ images, title }: Props) {
               border
               transition-all
               duration-300
-
               ${
                 selectedImage === index
                   ? "border-violet-500"
@@ -57,7 +57,12 @@ export default function ProjectGallery({ images, title }: Props) {
             <img
               src={image}
               alt={`${title} ${index + 1}`}
-              className="h-20 w-32 object-cover"
+              className="
+                h-24
+                w-40
+                bg-[#0f1117]
+                object-contain
+              "
             />
           </button>
         ))}

@@ -8,23 +8,23 @@ export const contact: ContactData = {
   links: [
     {
       label: "Email",
-      value: "your@email.com",
-      href: "mailto:your@email.com",
+      value: "souravpriyadarsi@gmail.com",
+      href: "mailto:souravpriyadarsi@gmail.com",
     },
     {
       label: "GitHub",
-      value: "github.com/yourusername",
-      href: "https://github.com/yourusername",
+      value: "@souravpriyadarsi",
+      href: "https://github.com/Souravpriyadarsi",
     },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      href: "https://linkedin.com/in/yourprofile",
+      value: "@souravpriyadarsi",
+      href: "https://www.linkedin.com/in/souravpriyadarsi/",
     },
     {
       label: "Resume",
       value: "Download PDF",
-      href: "/resume.pdf",
+      href: "/public/Sourav_Resume_Developer.pdf",
     },
   ],
 };

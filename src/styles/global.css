@@ -212,3 +212,45 @@ body {
 .footer-top-link:hover {
   color: #ffffff;
 }
+
+/* =======================================================
+   TIMELINE
+======================================================= */
+
+.timeline-spine {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.timeline-accent {
+  background: var(--accent);
+
+  opacity: 0;
+
+  transform: scaleY(0.5);
+
+  transform-origin: center;
+
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.timeline-item.is-active .timeline-accent {
+  opacity: 1;
+
+  transform: scaleY(1);
+}
+
+/* =======================================================
+   EXPERIENCE TIMELINE
+======================================================= */
+
+.experience-timeline {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .timeline-track {
+    display: block;
+  }
+}

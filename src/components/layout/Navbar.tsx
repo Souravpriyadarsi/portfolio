@@ -7,20 +7,25 @@ export default function Navbar() {
   return (
     <header
       className={clsx(
-        "fixed left-0 top-0 z-50 w-full transition-all duration-500",
+        "fixed left-0 top-0 z-50 w-full transition-[padding,background-color,border-color,box-shadow] duration-500",
         scrolled ? "py-4" : "py-8",
       )}
     >
       <Container>
         <nav
           className={clsx(
-            "mx-auto flex items-center justify-between transition-all duration-500",
+            "mx-auto flex items-center justify-between transition-[padding,background-color,border-color,box-shadow] duration-500",
             scrolled
-              ? "rounded-full border border-white/10 bg-black/40 px-8 py-4 shadow-2xl backdrop-blur-xl"
-              : "px-0 py-6",
+              ? "rounded-full border border-white/10 bg-black/40 px-8 py-4 shadow-1g backdrop-blur-xl"
+              : "border border-transparent rounded-full bg-transparent px-0 py-6",
           )}
         >
-          <h2 className="text-xl font-bold tracking-wide">SP</h2>
+          <a
+            href="#home"
+            className="text-xl font-bold tracking-wide transition-opacity duration-300 hover:opacity-80"
+          >
+            SP
+          </a>
 
           <ul className="hidden md:flex items-center gap-12 text-sm">
             <li>
