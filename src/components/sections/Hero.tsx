@@ -52,8 +52,11 @@ export default function Hero() {
   );
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center">
-      <div className="absolute left-1/2 top-1/2 -z-10 h-150 w-600 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-[160px]" />
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center overflow-hidden"
+    >
+      <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-150 w-600 max-w-none -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-[160px]" />
 
       <Container>
         <div ref={heroRef} className="max-w-5xl">
@@ -69,7 +72,7 @@ export default function Hero() {
             Turning ideas into intuitive digital experiences.
           </p>
 
-          <div className="hero-actions mt-12 flex items-center gap-8">
+          <div className="hero-actions mt-12 flex flex-wrap items-center gap-4 sm:gap-8">
             <a
               href="#projects"
               className="text-neutral-300 transition-colors duration-300 hover:text-white"

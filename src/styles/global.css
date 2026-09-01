@@ -29,6 +29,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* =======================================================
@@ -45,7 +47,7 @@ body {
 
 .hero-title {
   display: block;
-  font-size: clamp(4rem, 10vw, 9rem);
+  font-size: clamp(2.5rem, 11vw, 9rem);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.05em;
@@ -102,10 +104,16 @@ body {
 }
 
 .timeline-title {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.025em;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .timeline-title {
+    font-size: 2.25rem;
+  }
 }
 
 .timeline-subtitle {
@@ -143,6 +151,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding-bottom: 1.5rem;
   transition: border-color 300ms ease;
@@ -150,6 +159,14 @@ body {
 
 .contact-link:hover .contact-value {
   transform: translateX(0.5rem);
+}
+
+@media (max-width: 640px) {
+  .contact-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 /* =======================================================
    INTERACTIONS
@@ -174,9 +191,16 @@ body {
 }
 
 .contact-value {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
+  overflow-wrap: anywhere;
   transition: transform 300ms ease;
+}
+
+@media (min-width: 640px) {
+  .contact-value {
+    font-size: 1.5rem;
+  }
 }
 
 /* =======================================================
