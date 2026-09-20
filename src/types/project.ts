@@ -1,3 +1,11 @@
+export interface ProjectShot {
+  label: string;
+
+  dark: string;
+
+  light: string;
+}
+
 export interface Project {
   id: number;
 
@@ -5,19 +13,21 @@ export interface Project {
 
   tagline: string;
 
-  problem: string;
-
-  solution: string;
-
-  role: string;
-
   description: string;
+
+  highlights: string[];
 
   stack: string[];
 
-  images: string[];
+  shots: ProjectShot[];
 
   video?: string;
+
+  problem?: string;
+
+  solution?: string;
+
+  role?: string;
 
   github?: string;
 

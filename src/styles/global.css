@@ -278,3 +278,30 @@ body {
     display: block;
   }
 }
+
+/* =======================================================
+   PROJECTS
+======================================================= */
+
+@keyframes project-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.project-panel,
+.project-media-in {
+  animation: project-in 400ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-panel,
+  .project-media-in {
+    animation: none;
+  }
+}
