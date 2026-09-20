@@ -17,6 +17,8 @@ export interface Project {
 
   images: string[];
 
+  video?: string;
+
   github?: string;
 
   live?: string;

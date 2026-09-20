@@ -66,6 +66,27 @@ export default function CaseStudy() {
           </div>
         </Reveal>
 
+        {project.video && (
+          <div className="mt-16">
+            <Reveal delay={0.45}>
+              <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/40">
+                Walkthrough
+              </p>
+
+              <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0f1117] p-3 md:p-6">
+                <video
+                  src={project.video}
+                  poster={project.images[0]}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="aspect-video w-full rounded-2xl bg-black"
+                />
+              </div>
+            </Reveal>
+          </div>
+        )}
+
         <div className="mt-16">
           <Reveal delay={0.5}>
             <ProjectGallery images={project.images} title={project.title} />

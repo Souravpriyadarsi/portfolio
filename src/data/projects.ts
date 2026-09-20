@@ -1,9 +1,10 @@
 import type { Project } from "../types/project";
-import dashboard from "../assets/images/lifexp/dashboard.png";
-import tasks from "../assets/images/lifexp/tasks.png";
-import rewards from "../assets/images/lifexp/rewards.png";
-import calendar from "../assets/images/lifexp/calendar.png";
-import milestones from "../assets/images/lifexp/milestones.png";
+import dashboard from "../assets/images/life_XP/dashboard-dark.png";
+import achievements from "../assets/images/life_XP/achievements-dark.png";
+import rewards from "../assets/images/life_XP/rewards-dark.png";
+import calendar from "../assets/images/life_XP/calendar-dark.png";
+import settings from "../assets/images/life_XP/settings-dark.png";
+import lifeXPVideo from "../assets/videos/life_XP/brag_lifeXP.mp4";
 
 export const projects: Project[] = [
   {
@@ -20,6 +21,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Tailwind", "Zustand", "Recharts", "PWA"],
     github: "#",
     live: "#",
-    images: [dashboard, tasks, rewards, calendar, milestones],
+    images: [dashboard, achievements, rewards, calendar, settings],
+    video: lifeXPVideo,
   },
 ];
